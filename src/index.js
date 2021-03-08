@@ -1,1 +1,2 @@
-// ARCHIVO PRINCIPAL DE NUESTRA APLICACION
+import {Minijuego} from "./js/Minijuego";
+import {Animal} from "./js/Animal";
