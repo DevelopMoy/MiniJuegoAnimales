@@ -1,1 +1,45 @@
 /* ESTILOS INDIVIDUALES PARA COMPONENTES DE JS, WEBPACK NO LOS EXPORTA COMO ARCHIVOS SEPARADOS, SI NO, QUE LO AÑADE A CADA .JS*/
+#areaJuego{
+    display: block;
+    width: 900px;
+    height: 500px;
+    border: 1px solid #cccccc;
+    box-shadow: 2px 2px 4px #cccccc;
+}
+
+#areaAnimal, #areaHabitat{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#areaHabitat{
+    margin-top: 3%;
+}
+
+#areaAnimal{
+    margin-top: 10%;
+}
+
+.dragEnter {
+    transform: scale(1.1);
+}
+
+.disabledImg {
+    opacity: 0.3;
+}
+
+.animalObj img{
+    padding: 9px;
+    width: 150px;
+    height: 150px;
+}
+.habitatObj img {
+    padding: 9px;
+    width: 180px;
+    height: 180px;
+}
+
+#areaPuntuac{
+    display: none;
+}
