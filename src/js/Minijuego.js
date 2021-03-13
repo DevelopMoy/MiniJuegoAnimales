@@ -84,6 +84,7 @@ export class Minijuego{
             document.querySelector("#tituloAnim"+dataPers).classList.remove("hiddenImg");
             areaPuntos.innerHTML=parseInt(areaPuntos.innerHTML)+1;
         }else{
+            document.querySelector("#sonidoError").play();
             document.querySelector("#botonEnojado").click();
         }
     }
