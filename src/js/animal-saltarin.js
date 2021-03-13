@@ -8,6 +8,7 @@ export class MonoBailarin{
         }
         dibujarMono(estado){
             this.estado=estado;
+            clearInterval(this.intervalo);
             if(this.estado==0){
                 this.dibujoCanvas('../assets/reposo/');
             }else if(this.estado==1){
@@ -16,16 +17,17 @@ export class MonoBailarin{
                 this.dibujoCanvas('../assets/enojado/');
             }
         }
+
         dibujoCanvas(gif){
-            let ctx = pistaBaile.getContext('2d')
+            let ctx = pistaBaile.getContext('2d');
+            ctx.clearRect(0,0,350,350);
             let img = new Image();
-            console.log('hola1');
-            setInterval(()=>{
+            this.intervalo = setInterval(()=>{
                 for(let i=0;i<1000;i+=100){
-                    console.log(i/100);
                     setTimeout(()=>{
                         img.src=`${gif}${i/100}.gif`;
                         img.onload=(() => {
+                            ctx.clearRect(0,0,350,350);
                             ctx.drawImage(img,0,0);
                         });
                     },i);

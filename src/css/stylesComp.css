@@ -1,8 +1,15 @@
 /* ESTILOS INDIVIDUALES PARA COMPONENTES DE JS, WEBPACK NO LOS EXPORTA COMO ARCHIVOS SEPARADOS, SI NO, QUE LO AÑADE A CADA .JS*/
+#generalCont{
+    display: flex;
+    flex-flow: nowrap row;
+}
+
 #areaJuego{
     display: block;
     width: 900px;
     height: 500px;
+    background-color: #cccccc;
+    background-image: url("../assets/animales/fondanim.jpg");
     border: 1px solid #cccccc;
     box-shadow: 2px 2px 4px #cccccc;
 }
@@ -43,3 +50,69 @@
 #areaPuntuac{
     display: none;
 }
+/**/
+#titulo{
+    margin: 0;
+    font-size: 94px;
+    font-family: 'RocknRoll One', sans-serif;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.homeView h3{
+    font-size: 50px;
+    flex-basis: 100%;
+    color: wheat;
+    text-align: center;
+}
+
+.homeView{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#areaBoton{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#areaBoton>button{
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 2px 2px 5px #cccccc;
+    border-radius: 15px;
+    padding: 6px;
+    margin-left: 50px;
+    width: 100px;
+}
+
+.subtitulo{
+    position: fixed;
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 3px 3px 6px #cccccc;
+    top: 250px;
+}
+
+.show{
+    display: block;
+}
+
+.hiddenImg {
+    display: none;
+}
+
+#areaBailando{
+    box-shadow: 2px 2px 15px #cccccc;
+}
+
